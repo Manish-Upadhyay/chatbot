@@ -1,0 +1,9 @@
+.container {
+  padding: 20px 20px 0 20px !important;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 80px;
+  background: #f5f8fb !important;
+  z-index: 1;
+}
