@@ -21,6 +21,7 @@ const initialState = {
       },
       status: "",
       title: "Chat Widget",
+      path: "/integrations/widget",
       about:
         "Customize your own chat widget and place on your website to be in touch with your customers."
     },
@@ -54,6 +55,7 @@ const initialState = {
       },
       status: "installed",
       title: "Live Chat",
+      path: "/integrations/livechat",
       about:
         "Connect created scenarios with your LiveChat account. You can take control of any converstation anytime you need."
     },
@@ -75,6 +77,7 @@ const initialState = {
       },
       status: "vote",
       title: "Chat Widget",
+      path: "/integrations/widget",
       about:
         "Customize your own chat widget and place on your website to be in touch with your customers."
     },
@@ -108,6 +111,7 @@ const initialState = {
       },
       status: "",
       title: "Live Chat",
+      path: "/integrations/livechat",
       about:
         "Connect created scenarios with your LiveChat account. You can take control of any converstation anytime you need."
     },
@@ -129,6 +133,7 @@ const initialState = {
       },
       status: "installed",
       title: "Chat Widget",
+      path: "/integrations/widget",
       about:
         "Customize your own chat widget and place on your website to be in touch with your customers."
     },
@@ -162,6 +167,75 @@ const initialState = {
       },
       status: "",
       title: "Live Chat",
+      path: "/integrations/livechat",
+      about:
+        "Connect created scenarios with your LiveChat account. You can take control of any converstation anytime you need."
+    },
+    {
+      icon: {
+        img: (
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 193.1 193.1">
+            <path
+              className="border"
+              d="M41.8.7H151.2a40.67,40.67,0,0,1,40.7,40.7V151a40.67,40.67,0,0,1-40.7,40.7H41.8A40.67,40.67,0,0,1,1.1,151V41.3A40.65,40.65,0,0,1,41.8.7Z"
+              style={{ fill: "#313131" }}
+            ></path>
+            <path
+              className="background"
+              d="M46.3,172.2a25.86,25.86,0,0,1-25.8-25.8V45.9A25.69,25.69,0,0,1,46.2,20.2H146.6A25.86,25.86,0,0,1,172.4,46V146.6a25.86,25.86,0,0,1-25.8,25.8"
+              style={{ fill: "#fff" }}
+            ></path>
+            <polygon
+              className="letter"
+              points="87.8 127.6 87.8 143.6 35.8 143.6 35.8 49.2 55 49.2 55 127.6 87.8 127.6"
+              style={{ fill: "#313131" }}
+            ></polygon>
+            <path
+              className="letter"
+              d="M111,98.1a73.49,73.49,0,0,0,.7,8.2c3.2,18.2,16.5,25.7,36.8,21.2,2.1-.5,4.8-3.2,6.5,0a24.34,24.34,0,0,1,3.3,12.7c-.1,1.2-1.6,1.2-2.6,1.5-12.7,3.9-25.4,4.6-38,.1-15.3-5.5-23.2-17.4-26.1-32.8-2.5-13-1.4-25.8,4.7-37.7,7.1-14,18.8-21.2,34.3-22.3a66.35,66.35,0,0,1,22.6,2.1c3.9,1.1,4.6,3.2,3.5,6.6a4.18,4.18,0,0,1-.4,1c-2.5,8.6-2.4,8.6-11.1,6.9C123.8,61.2,111.1,72.8,111,98.1Z"
+              style={{ fill: "#d96c2e" }}
+            ></path>
+          </svg>
+        ),
+        backgroundStyle: { background: "#f1842f" }
+      },
+      status: "",
+      title: "Live Chat",
+      path: "/integrations/livechat",
+      about:
+        "Connect created scenarios with your LiveChat account. You can take control of any converstation anytime you need."
+    },
+    {
+      icon: {
+        img: (
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 193.1 193.1">
+            <path
+              className="border"
+              d="M41.8.7H151.2a40.67,40.67,0,0,1,40.7,40.7V151a40.67,40.67,0,0,1-40.7,40.7H41.8A40.67,40.67,0,0,1,1.1,151V41.3A40.65,40.65,0,0,1,41.8.7Z"
+              style={{ fill: "#313131" }}
+            ></path>
+            <path
+              className="background"
+              d="M46.3,172.2a25.86,25.86,0,0,1-25.8-25.8V45.9A25.69,25.69,0,0,1,46.2,20.2H146.6A25.86,25.86,0,0,1,172.4,46V146.6a25.86,25.86,0,0,1-25.8,25.8"
+              style={{ fill: "#fff" }}
+            ></path>
+            <polygon
+              className="letter"
+              points="87.8 127.6 87.8 143.6 35.8 143.6 35.8 49.2 55 49.2 55 127.6 87.8 127.6"
+              style={{ fill: "#313131" }}
+            ></polygon>
+            <path
+              className="letter"
+              d="M111,98.1a73.49,73.49,0,0,0,.7,8.2c3.2,18.2,16.5,25.7,36.8,21.2,2.1-.5,4.8-3.2,6.5,0a24.34,24.34,0,0,1,3.3,12.7c-.1,1.2-1.6,1.2-2.6,1.5-12.7,3.9-25.4,4.6-38,.1-15.3-5.5-23.2-17.4-26.1-32.8-2.5-13-1.4-25.8,4.7-37.7,7.1-14,18.8-21.2,34.3-22.3a66.35,66.35,0,0,1,22.6,2.1c3.9,1.1,4.6,3.2,3.5,6.6a4.18,4.18,0,0,1-.4,1c-2.5,8.6-2.4,8.6-11.1,6.9C123.8,61.2,111.1,72.8,111,98.1Z"
+              style={{ fill: "#d96c2e" }}
+            ></path>
+          </svg>
+        ),
+        backgroundStyle: { background: "#f1842f" }
+      },
+      status: "",
+      title: "Live Chat",
+      path: "/integrations/livechat",
       about:
         "Connect created scenarios with your LiveChat account. You can take control of any converstation anytime you need."
     }

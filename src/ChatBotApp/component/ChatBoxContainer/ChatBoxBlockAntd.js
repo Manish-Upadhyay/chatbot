@@ -5,10 +5,16 @@ import "./ChatBoxBlockAntd.css";
 
 export class ChatBoxBlockAntd extends Component {
   render() {
-    const { children } = this.props;
+    const { children, history } = this.props;
     const { Meta } = Card;
+    console.log(this.props);
     return (
-      <div className="box">
+      <div
+        onClick={() => {
+          history.push(children.path);
+        }}
+        className="box"
+      >
         <Card bordered={false}>
           {children.status && children.status === "installed" ? (
             <div className="installed">
