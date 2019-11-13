@@ -1,0 +1,40 @@
+.banner {
+  /* background: #045ffe; */
+  /* box-sizing: border-box; */
+  padding: 80px;
+  width: 100%;
+}
+
+.title {
+  color: #fff;
+}
+
+.discription {
+  margin-top: 20px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.logo {
+  width: 140px;
+}
+
+.logo svg {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    text-align: center;
+    padding: 50px;
+  }
+
+  .logo {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .logo svg {
+    width: 70px;
+  }
+}

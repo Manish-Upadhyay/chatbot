@@ -1,16 +1,27 @@
 import React from "react";
-import Head from "./common/Head/Head";
+import NavBar from "./common/NavBar/NavBar";
 import Banner from "./common/Banner/Banner";
-import Content from "./common/Content/Content";
+import InterigationContainer from "./common/InterigationContainer/InterigationContainer";
 
-function CommonChatView() {
+import { connect } from "react-redux";
+
+function CommonChatView({ chatBoxDetails }) {
+  console.log(chatBoxDetails);
   return (
     <>
-      <Head theme="light">Head</Head>
-      <Banner>Beaner</Banner>
-      <Content></Content>
+      <NavBar title={chatBoxDetails.title} theme="light" />
+      <Banner childBoxDetails={chatBoxDetails} />
+      <InterigationContainer />
     </>
   );
 }
 
-export default CommonChatView;
+const mapStateToProps = (state, ownProps) => {
+  const chatBoxDetails = state.chatBoxes.allChatBox.find(
+    chbx => chbx.path === ownProps.location.pathname
+  );
+  console.log(chatBoxDetails);
+  return { chatBoxDetails };
+};
+
+export default connect(mapStateToProps)(CommonChatView);

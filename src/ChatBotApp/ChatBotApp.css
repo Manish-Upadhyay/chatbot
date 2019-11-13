@@ -1,0 +1,8 @@
+@media screen and (max-width: 768px) {
+  .layout-container {
+    margin: 0 !important;
+  }
+  .sidebar {
+    display: none;
+  }
+}

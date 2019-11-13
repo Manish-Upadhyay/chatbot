@@ -7,7 +7,6 @@ export class ChatBoxBlockAntd extends Component {
   render() {
     const { children, history } = this.props;
     const { Meta } = Card;
-    console.log(this.props);
     return (
       <div
         onClick={() => {
